@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #061058;
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #364fc7;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #ffffff;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* ===========================================
+Hero and Service Section Start
+======================================= */
+.section-hero{
+
+  margin-top: -69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#about-img{
+    height: 471px;
+    width: 600px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+
+.section-hero p,
+.section-services p {
+  font-size: 3.2rem;
+}
+.banner{
+    width: 1536px;
+    margin-top: 70px;
+  }
+  .form-container {
+    background-color: #fff;
+    border-radius: 8px;
+}
+#about-img{
+    height: 471px;
+    width: 600px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 66px;
+}
+#join{
+    width: 721px;
+}
+
+#input{
+    height: 53px;
+    border-radius: 20px;
+    width: 685px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+#btn {
+   
+    height: 48px;
+    width: 121px;
+    border-radius: 20px;
+    background-color: #061058;
+}
+#from{
+    margin-top: 31px;
+}
+
+
+footer{
+    background-color: #061058;
+    margin-top: 20px;
+  }
+  #heading{
+    color:#fff;
+  }
+  #footer-link{
+   list-style-type: none;
+   text-decoration: none;
+  }
+  .line{
+    color: #fff;
+  }
+  .form-container {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  ::-webkit-input-placeholder{
+    color:#000;
+}
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+@media (max-width: 62em) {
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid #fcfcfc;
+    color: #ffffff;
+  }
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+  .banner{
+    width: 600px;
+}
+#footer-link{
+    margin-left: 20px;
+}
+#heading{
+    margin-left: 20px; 
+}
+#input{
+    width: 552px;
+}
+#about-img{
+    width: 572px;
+}
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .header .logo {
+    width: 60%;
+  }
+
+}
+
+
+
+            /* Import Google font - Poppins */
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+            .container {
+              position: relative;
+              max-width: 700px;
+              width: 100%;
+              background: #fff;
+              padding: 25px;
+              border-radius: 8px;
+              box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            }
+            .container header {
+              font-size: 1.5rem;
+              color: #333;
+              font-weight: 500;
+              text-align: center;
+            }
+            .container .form {
+              margin-top: 30px;
+            }
+            .form .input-box {
+              width: 100%;
+              margin-top: 20px;
+            }
+            .input-box label {
+              color: #333;
+            }
+            .form :where(.input-box input, .select-box) {
+              position: relative;
+              height: 50px;
+              width: 100%;
+              outline: none;
+              font-size: 1rem;
+              color: #707070;
+              margin-top: 8px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              padding: 0 15px;
+            }
+            .input-box input:focus {
+              box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+            }
+            .form .column {
+              display: flex;
+              column-gap: 15px;
+            }
+            .form .gender-box {
+              margin-top: 20px;
+            }
+            .gender-box h3 {
+              color: #333;
+              font-size: 1rem;
+              font-weight: 400;
+              margin-bottom: 8px;
+            }
+            .form :where(.gender-option, .gender) {
+              display: flex;
+              align-items: center;
+              column-gap: 50px;
+              flex-wrap: wrap;
+            }
+            .form .gender {
+              column-gap: 5px;
+            }
+            .gender input {
+              accent-color: rgb(130, 106, 251);
+            }
+            .form :where(.gender input, .gender label) {
+              cursor: pointer;
+            }
+            .gender label {
+              color: #707070;
+            }
+            .address :where(input, .select-box) {
+              margin-top: 15px;
+            }
+            .select-box select {
+              height: 100%;
+              width: 100%;
+              outline: none;
+              border: none;
+              color: #707070;
+              font-size: 1rem;
+              background-color: #fff;
+            }
+            .form button {
+              height: 55px;
+              width: 100%;
+              color: #fff;
+              font-size: 1rem;
+              font-weight: 400;
+              margin-top: 30px;
+              border: none;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              background: rgb(130, 106, 251);
+            }
+            .form button:hover {
+              background: rgb(88, 56, 250);
+            }
+            /*Responsive*/
+            @media screen and (max-width: 500px) {
+              .form .column {
+                flex-wrap: wrap;
+              }
+              .form :where(.gender-option, .gender) {
+                row-gap: 15px;
+              }
+            }
+
+            #link{
+                color: white;
+                margin: 10px;
+            }
+            .span{
+              margin-left: 20px;
+            }
+            #button1{
+              margin-top: 20px;
+              border-radius: 10px;
+
+            }
